@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Geomapa</title>
+    <link rel="stylesheet" href="lib/jquery-ui-1.12.1.custom/jquery-ui.min.css">
+    <link rel="stylesheet" href="lib/jquery-ui-1.12.1.custom/jquery-ui.theme.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/lib/jquery-ui-1.12.1.custom/jquery-ui.custom.min.js"></script>
+
+    <div class="container">
+        <h1 class="page-header">Geomapa</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <form method="post" action="" id="">
+                <div class="col-md-12 form-group">
+                    <div class="col-md-6 ui-widget">
+                        <label for="txtEnderecoPartida">Ponto de partida:</label>
+                        <input type="text" class="form-control" id="txtEnderecoPartida" name="txtEnderecoPartida" />
+                    </div>
+        
+                    <div class="col-md-6 ui-widget">
+                        <label for="txtEnderecoChegada">Ponto de chegada:</label>
+                        <input type="text" class="form-control" id="txtEnderecoChegada" name="txtEnderecoChegada" />
+                    </div>
+                    
+                    <div class="col-md-12" style="margin-top: 10px">
+                        <button type="submit" class="btn btn-md btn-primary" id="btnEnviar" name="btnEnviar">Confimar</button>
+                    </div>
+                </div>
+            </form>
+            <div class="col-md-12" style="margin-left: 15px; margin-right: 15px;">
+                <div id="mapa" style="height: 535px; width: 100%"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyB9NChIX6Ot73UWvX-FGUfsyo-LG1rsMZg&amp;sensor=false"></script>
+
+    <script src="js/mapa.js"></script>
+
+</body>
+
+</html>
